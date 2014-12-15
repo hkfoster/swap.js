@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Swap.js Demo</title>
+    <meta name="description" content="The most basic demo illustrating Swap.js' functionality. For questions, visit https://github.com/hkfoster/swap.js.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="swap.css">
+  </head>
+
+  <body>
+
+    <!-- Artibrary nav element contains our swap triggers -->
+    <nav class="swap-nav">
+      <a href="#swap-item-1" class="swap-trigger">Show Item 1</a>
+      <a href="#swap-item-2" class="swap-trigger">Show Item 2</a>
+      <a href="#swap-item-3" class="swap-trigger">Show Item 3</a>
+    </nav>
+
+    <!-- Basic article structure with swappable sections -->
+    <article class="swap-container">
+
+      <section id="swap-item-1" class="swappable">
+        <h2>Content in #swap-item-1</h2>
+        <p>Robust caffeine, cinnamon, kopi-luwak, acerbic steamed java froth aged. Brewed shop extra flavour cultivar shop cream body black at dripper extra. Aromatic whipped, mazagran, kopi-luwak robust brewed decaffeinated doppio irish aroma crema.</p>
+        <p>Steamed filter crema extraction steamed robusta carajillo turkish. Flavour turkish mazagran est irish white eu mug variety. Robust, in cream coffee that viennese crema irish variety decaffeinated.</p>
+      </section>
+
+      <section id="swap-item-2" class="swappable">
+        <h2>Content in #swap-item-2</h2>
+        <p>Galão, redeye, single origin shop mug brewed sweet instant americano. Organic cultivar a, id, ristretto, iced percolator whipped percolator frappuccino trifecta foam. Macchiato con panna wings, fair trade, trifecta est, grinder breve as cream roast.</p>
+        <p>Sweet single shot caffeine, extraction bar single shot mug frappuccino. Pumpkin spice, as carajillo aroma organic doppio acerbic et redeye brewed grinder affogato. Turkish aftertaste, steamed arabica chicory, whipped, foam variety wings extra blue mountain.</p>
+      </section>
+
+      <section id="swap-item-3" class="swappable">
+        <h2>Content in #swap-item-3</h2>
+        <p>Caramelization cream, cinnamon sit sweet skinny frappuccino. Mug, cinnamon to go frappuccino seasonal shop flavour so dark.</p>
+        <p>Sugar dripper plunger pot turkish aftertaste, half and half fair trade et black and plunger pot. Mazagran sweet spoon, galão white fair trade cup siphon sugar.</p>
+      </section>
+
+    </article>
+
+    <!-- And yes, this plugin supports multiple triggers on the page -->
+    <a href="#swap-item-2" class="swap-trigger">Show Item 2 (surprise!)</a>
+
+    <!-- Swap.js inclusion -->
+    <script src="../swap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+/* ==========================================================================
+ * Swap navigation items
+ * ========================================================================== */
+
+.swap-trigger {
+  color: #AAA;
+}
+
+.swap-trigger.selected {
+  color: #1E90FF;
+}
+
+/* ==========================================================================
+ * Swappable elements
+ * ========================================================================== */
+
+/* Visually hide elements */
+.swappable {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+/* Visually show elements */
+.swappable.selected {
+  position: static;
+  top: auto;
+  left: auto;
+}
+
+/* ==========================================================================
+ * Additional illustrative styles
+ * ========================================================================== */
+
+body {
+  max-width: 500px;
+  margin: 2em auto;
+  font-family: 'Avenir', 'Avenir Next', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+}
+
+.swap-trigger + .swap-trigger {
+  margin-left: 1em;
+}
+
+.swappable {
+  min-height: 400px;
+  width: 100%;
+  border: 2px solid #DDD;
+  padding: 0 1.25em;
+  margin: .625em 0;
+}
